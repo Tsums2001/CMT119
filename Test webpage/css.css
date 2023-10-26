@@ -1,0 +1,112 @@
+* {
+	box-sizing: border-box;
+}
+
+.main_title {
+	text-align: center;
+	font-size: 40px;
+	font-family: "Monoca", monospace;
+	color: white;
+	background-color: #8FA1F7;
+	opacity: 0.85;
+	padding: 5%;
+	border-radius: 25px;
+}
+
+.main_section {
+	display: flex;
+	border: 30px solid transparent;
+	padding: 15px;
+	border-image: url('Images/border image.png') 125 round;
+}
+
+@media screen and (max-width: 768px) {
+	.main_section {
+		display: block;
+	}
+	nav {
+		width: 100%;
+	}
+	}
+	article {
+		width: 100%;
+	}
+}
+
+.sub_title {
+	text-align: center;
+	font-size: 28px;
+	font-family: Georgia, serif;
+	color: black;
+}
+
+body {
+	background-image: url('Images/CardiffUni.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: pixelated
+}
+
+nav {
+	text-align: left;
+	float: left;
+	background-color: #7851A9;
+	padding: 20px;
+	border-radius: 25px;
+	flex: 0.3;
+}
+
+#menu ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+#menu li {
+	display: inline;
+}
+
+.button {
+	border: none;
+	border-radius: 2px;
+	padding: 5px;
+	color: black;
+	transition-duration: 0.4s;
+	border: 2px solid black;
+}
+
+.button:hover {
+	background-color: black;
+	color: white;
+}
+
+.images {
+	max-width: 100%;
+	border-radius: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article {
+	float: left;
+	padding: 20px;
+	background-color: #DBCA72;
+	border-radius: 25px;
+	flex: 0.7;
+	font-family: "Ludica Console", monospace;
+}
+
+section::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+footer {
+	background-color: #6F189E;
+	opacity: 0.85;
+	padding: 10px;
+	border-radius: 25px;
+}
